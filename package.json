@@ -1,0 +1,15 @@
+{
+  "name": "primer-entrega",
+  "version": "1.0.0",
+  "description": "Incribir y buscar cursos",
+  "main": "cursos.js",
+  "dependencies": {
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander ahurtadoc@unal.edu.co",
+  "license": "ISC"
+}

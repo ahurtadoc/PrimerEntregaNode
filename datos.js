@@ -1,5 +1,7 @@
 const fs = require('fs')
-
+const express = require('express')
+const app = express()
+ 
 
 let cursos = [
 {	id: 1001,
@@ -78,10 +80,11 @@ let inscribir = (id,n,cc) =>{
 		'Ha sido inscrito al curso ' + curso.nombre + '\n' +
 		'el cual tiene un valor de '+ curso.costo + 
 		' y una duracion de ' + curso.duracion;
-		fs.writeFile("inscripcion.txt",msj,(err)=>{
-			if (err) throw (err);
-			console.log('Archivo de registro creado exitosamente')
-		})
+		app.get('/', function (req, res) {
+  				res.send(msj)
+				})
+	 
+		app.listen(3000)
 
 	}
 }

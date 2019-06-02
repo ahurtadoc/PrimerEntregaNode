@@ -33,7 +33,7 @@ const argv = require('yargs')
 						,i*2000)}
 				})
 				.command('inscribir','inscripcion cursos',datos,(argv)=>{
-					inscribir(argv.id,argv.n,argv.cc)
+					inscribir(argv.id,argv.n,argv.c)
 				})
 				.command('buscar','buscar un curso',datoBuscar,(argv)=>{
 					buscarCurso(argv.id)
